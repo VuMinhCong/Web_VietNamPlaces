@@ -9,90 +9,259 @@
     <title>Document</title>
 </head>
 <body>
-   <header>
+   <header id="TC">
        <div class="header-top">
         <i class="fas fa-bars"></i>
         <ul>
-            <li style="--x:1;"><a href="">Trang chủ</a></li>
-            <li style="--x:2;"><a href="">Đặc điểm</a></li>
-            <li style="--x:3;"><a href="">Về chúng tôi</a></li>
-            <li style="--x:4;"><a href="">Bộ sưu tập</a></li>
-            <li style="--x:5;"><a href="">Đánh giá</a></li>
-            <li style="--x:6;"><a href="">Liên hệ</a></li>
+            <li style="--x:1;"><a href="#TC">Home</a></li>
+            <li style="--x:2;"><a href="#DD">Places</a></li>
+            <li style="--x:3;"><a href="#AB">About</a></li>
+            <li style="--x:4;"><a href="#CL">Abum</a></li>
+            <li style="--x:5;"><a href="#FB">Feedback</a></li>
+            <li style="--x:6;"><a href="#CT">Contact</a></li>
         </ul>
        </div>
        <div class="video-container">
             <video src="video_dulich.mp4" autoplay muted loop></video>
        </div>
        <div class="header-content">
-           <h1>Khám phá</h1>
-           <p>Xách ba lô lên và đi thôi nào</p>
+           <h1>Discovery</h1>
+           <p>Pack your balo and let's go!!!</p>
            <form action="">
-               <h1>Bạn muốn đi đâu khi hết dịch</h1>
-               <p>Địa điểm</p>
+               <h1>Where do you want to go?</h1>
+               <p>Places</p>
                <select name="" id="">
-                   <option value="#">--Chọn địa điểm đi--</option>
+                   <option value="#">--Choose a places--</option>
                </select>
-               <p>Số người</p>
-               <input type="number" min="1" placeholder="Bạn đi bao nhiêu người">
-               <p>Ngày đi</p>
+               <p>Guest</p>
+               <input type="number" min="1" placeholder="How many people do you go?">
+               <p>Check in</p>
                <input type="date">
-               <p>Ngày về</p>
+               <p>Check out</p>
                <input type="date">
-               <button>Tìm kiếm</button>
+               <button>Search</button>
            </form>
        </div>
    </header> 
 <!-- ----------------------------NICE PLACE--------------------------  -->
-<section class="nice-place">
+<section class="nice-place" id="DD">
     <div class="container">
-        <h1>Địa Điểm Nổi Bật</h1>
+        <h1 class="title">Special Places</h1>
         <div class="nice-place-content row">
             <div class="nice-place-item">
                 <div class="nice-place-img">
-                    <img src="np1.jpg" alt="">
+                    <img src="img/np1.jpg" alt="">
                 </div>
                 <div class="nice-place-text">
-                    <h2>Tour Tây Bắc</h2>
+                    <h2>Tour Northwest</h2>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
-                    <p>Hà Nội, thủ đô của Việt Nam, nổi tiếng với kiến trúc trăm tuổi và nền văn hóa phong phú với sự ảnh hưởng của khu vực Đông Nam Á, Trung Quốc và Pháp.</p>
-                    <button>Mua Tour</button>
+                    <p>The Northwest or Northwest is the western mountainous region of North Vietnam , sharing the border with Laos and China.</p>
+                    <button class="but">Pick Tour</button>
                 </div>
             </div>
             <div class="nice-place-item">
                 <div class="nice-place-img">
-                    <img src="np2.jpg" alt="">
+                    <img src="img/np3.jpg" alt="">
                 </div>
-                <div class="nice- place-text">
-                    <h2>Tour Hồ Chí Minh</h2>
+                <div class="nice-place-text">
+                    <h2>Tour Ha Noi</h2>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
-                    <p>Thành phố Hồ Chí Minh (thường được gọi là Sài Gòn) là một thành phố ở miền nam Việt Nam nổi tiếng với vai trò nòng cốt trong chiến tranh Việt Nam.</p>
-                    <button>Mua Tour</button>
+                    <p>Hanoi, the capital of Vietnam, is famous for its centennial architecture and rich culture with influences from Southeast Asia, China and France.</p>
+                    <button class="but">Pick Tour</button>
                 </div>
             </div>
             <div class="nice-place-item">
                 <div class="nice-place-img">
-                    <img src="np3.jpg" alt="">
+                    <img src="img/np2.jpg" alt="">
                 </div>
-                <div class="nice- place-text">
-                    <h2>Tour Hà Nội</h2>
+                <div class="nice-place-text">
+                    <h2>Tour Ho Chi Minh</h2>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
-                    <p>Thành phố Hồ Chí Minh (thường được gọi là Sài Gòn) là một thành phố ở miền nam Việt Nam nổi tiếng với vai trò nòng cốt trong chiến tranh Việt Nam.</p>
-                    <button>Mua Tour</button>
+                    <p>Ho Chi Minh City (commonly known as Saigon) is a city in southern Vietnam best known for its pivotal role in the Vietnam War.</p>
+                    <button class="but">Mua Tour</button>
                 </div>
             </div>
+        </div>
+    </div>
+</section>
+<!-- ---------------------------About------------------- -->
+<section class="about" id="AB">
+    <h1 class="title">About</h1>
+    <div class="container_1">
+        <div class="about-content-left">
+            <img src="img/about.jpg" alt="">
+        </div>
+        <div class="about-content-right">
+            <h2>Why should choose us?</h2>
+            <p>We are a leading company in providing domestic and international travel services.</p>
+            <button class="but">Search more</button>
+        </div>     
+    </div>
+    <div class="service row">
+        <div class="service-item">
+            <img src="img/hotel.png" alt="">
+            <p>Book Room</p>
+        </div>
+        <div class="service-item">
+            <img src="img/support.png" alt="">
+            <p>Support</p>
+        </div>
+        <div class="service-item">
+            <img src="img/guide-book.png" alt="">
+            <p>Guide book</p>
+        </div>
+    </div>
+</section>
+<!-- ------------------------------Tour 2021---------------------- -->
+<section class="tour" id="CL">
+    <div class="container_2">
+        <h1 class="title">Tour hè 2021</h1>
+        <div class="tour-content">
+            <div class="tour-content-item row">
+                <div class="tour-content-item-img">
+                    <img src="img/DaLatt.jpg" alt="">
+                </div>
+                <div class="tour-content-item-text">
+                    <h2>Da Lat</h2>
+                    <p>Da Lat is the provincial capital city of Lam Dong province, located on Lam Vien plateau, in the Central Highlands, Vietnam.</p>
+                    <button class="but">See more</button>
+                </div>
+            </div>
+            <div class="tour-content-item row">
+                <div class="tour-content-item-img">
+                    <img src="img/HoiAnn.jpg" alt="">
+                </div>
+                <div class="tour-content-item-text">
+                    <h2>Hoi An</h2>
+                    <p>Hoi An is a city in Quang Nam province, Vietnam. Hoi An ancient town used to be a busy international trading port, including architectural heritages dating back hundreds of years, recognized by UNESCO as a world cultural heritage since 1999.</p>
+                    <button class="but">See more</button>
+                </div>
+            </div>
+            <div class="tour-content-item row">
+                <div class="tour-content-item-img">
+                    <img src="img/HCM.jpg" alt="">
+                </div>
+                <div class="tour-content-item-text">
+                    <h2>Ho Chi Minh</h2>
+                    <p>Ho Chi Minh City is the center of economy , politics , culture and education in Vietnam . Ho Chi Minh City is a city directly under the central government belonging to a special urban type of Vietnam along with the capital Hanoi .</p>
+                    <button class="but">See more</button>
+                </div>
+            </div>
+            <div class="tour-content-item row">
+                <div class="tour-content-item-img">
+                    <img src="img/DaNang.jpg" alt="">
+                </div>
+                <div class="tour-content-item-text">
+                    <h2>Da Nang</h2>
+                    <p>Da Nang is a city directly under the central government, located in the South Central Coast of Vietnam, is the central and largest city in the Central - Central Highlands region.</p>
+                    <button class="but">See more</button>
+                </div>
+            </div>
+            <div class="tour-content-item row">
+                <div class="tour-content-item-img">
+                    <img src="img/HaGiang.jpg" alt="">
+                </div>
+                <div class="tour-content-item-text">
+                    <h2>Ha Giang</h2>
+                    <p>When coming to Ha Giang, everyone knows such as Lung Cu Flagpole, Dong Van old town, Tam Son Twin Mountain... </p>
+                    <button class="but">See more</button>
+                </div>
+            </div>
+            <div class="tour-content-item row">
+                <div class="tour-content-item-img">
+                    <img src="img/Hue.jpg" alt="">
+                </div>
+                <div class="tour-content-item-text">
+                    <h2>Hue</h2>
+                    <p>Hue used to be the capital of Vietnam in feudal times under the Tay Son and Nguyen dynasties.</p>
+                    <button class="but">See more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!----------------------------Reveiw---------------- --->
+<section class="review" id="FB">
+    <div class="container_3">
+        <h1 class="title">Feedback</h1>
+        <div class="review-content row">
+            <div class="review-item">
+                <div class="review-item-text">
+                    <img src="img/quotes.png" alt="">
+                    <p><span>&ldquo; </span> What a great travel!!! I love it! Thanks you very much!<span>&rdquo; </span></p>
+                </div>
+                <hr>
+                <div class="review-item-img row">
+                    <img src="img/test1.jpg" alt="">
+                    <h2>Harry Potcher<br><p style="font-size: 15px;">Date 06/04/2020</p></h2>
+                </div>    
+            </div>
+            <div class="review-item">
+                <div class="review-item-text">
+                    <img src="img/quotes.png" alt="">
+                    <p><span>&ldquo; </span> The service is great! Thanks very much!!!<span>&rdquo; </span></p>
+                </div>
+                <hr>
+                <div class="review-item-img row">
+                    <img src="img/test2.jpg" alt="">
+                    <h2>Ron Wesley<br><p style="font-size: 15px;">Date 03/02/2020</p></h2>
+                </div>    
+            </div>
+            <div class="review-item">
+                <div class="review-item-text">
+                    <img src="img/quotes.png" alt="">
+                    <p><span>&ldquo; </span>The service is good! But the price is expensive<span>&rdquo; </span></p>
+                </div>
+                <hr>
+                <div class="review-item-img row">
+                    <img src="img/test3.jpg" alt="">
+                    <h2>Hermonien<br><p style="font-size: 15px;">Date 28/09/2020</p></h2>
+                </div>    
+            </div>
+        </div>
+    </div>
+</section>
+<!-----------------------sign up------------------- -->
+<section class="signup" id="CT">
+    <h1 class="title">Sign Up</h1>
+    <div class="signup-content">
+        <input type="text" placeholder="Put your email">
+        <button class="but">Sent</button>
+    </div>
+</section>
+<!-----------------------contact------------------- -->
+<section class="contact">
+    <div class="container_4">
+        <h1 class="title">Contact</h1>
+        <div class="contact-content-top row">
+            <div class="contact-content-item">
+                <input type="text" placeholder="Name">
+            </div>
+            <div class="contact-content-item">
+                <input type="text" placeholder="Address">
+            </div>
+            <div class="contact-content-item">
+                <input type="text" placeholder="Email">
+            </div>
+            <div class="contact-content-item">
+                <input type="text" placeholder="Phone">
+            </div>
+        </div>
+        <div class="contact-content-bottom">
+            <textarea placeholder="Content"></textarea>
+            <button class="but">Sent</button>
         </div>
     </div>
 </section>

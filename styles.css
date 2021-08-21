@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
 :root {
     --main-color: #6DBFE2;
+    --subtex: 'Open Sans', sans-serif;
 }
 * {
     margin: 0;
@@ -14,18 +17,18 @@ ul {
 a {
     text-decoration: none;
 }
+header {
+    position: relative;
+}
+
 .video-container {
-    height: 100vh;
-    width: 100vw;
+   width: 100%;
+   height: 100vh;
 }
 .video-container video {
     width: 100%;
     height: 100vh;
     object-fit: cover;
-}
-
-header {
-    position: relative;
 }
 .header-top i {
     position: fixed;
@@ -37,8 +40,8 @@ header {
 }
 .header-top ul {
     position: fixed;
-    right: 0;
-    width: 300px;
+    right: 10px;
+    width: 15%;
     height: 100vh;
     padding: 150px 0 0 50px;
     /* background-color: var(--main-color);  */
@@ -66,12 +69,11 @@ header {
 } 
 .header-top ul li a {
     display: block;
-    background-color: rgb(160, 160, 240);
+    background-color: rgb(29, 29, 42);
     /* background-color: rgb(87, 20, 187); */
     padding: 12px;
     transition: all 0.3s ease;
-    border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px; 
+   border-radius: 7px;
     color: white;
 }
 .header-top ul li a:hover {
@@ -135,7 +137,8 @@ form button:hover {
 }
 /* ------------------Nice-Place---------------------*/
 .nice-place {
-    padding: 100px 0;
+    padding: 180px 0;
+    margin-bottom: 50px;
 }
 .row {
     display: flex;
@@ -143,11 +146,383 @@ form button:hover {
     justify-content: space-between;
 }
 .container {
-    max-width: 1024;
+    max-width: 1024px;
     margin: auto;
 } 
 .nice-place-item {
     width: 30%;
     height: 400px;
     position: relative;
+    overflow: hidden;
+}
+.nice-place-item:hover .nice-place-text{
+    transform: translateX(0%);
+}
+.nice-place-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.nice-place-text {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    bottom: 0;
+    padding: 12px;
+    background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(255,255,255,0));
+    transform: translateX(-100%);
+    transition: all 0.5s ease;
+}
+.nice-place-text h2 {
+    color: var(--main-color);
+
+}
+.nice-place-text i{
+    color:yellow;
+}
+.nice-place-text p{
+    color: white;
+    margin: 5px 0;
+}
+.but {
+    height: 30px;
+    width: 100px;
+    background-color: var(--main-color);
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+}
+.but:hover {
+    background-color: tomato;
+}
+.title {
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--main-color);
+    position: relative;
 } 
+.title::before {
+    position: absolute;
+    content: "";
+    height: 5px;
+    width: 200px;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.title::after {
+    position: absolute;
+    content: "\2665";
+    width: 40px;
+    height: 20px;
+    color: red;
+    background-color: white;
+    bottom: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/*--------------------------About--------------------------*/
+
+.about{
+    width: 100%;
+}
+
+.container_1 {
+    margin-top: 5vh;
+    margin-left: 15%;
+    display: flex;
+    width:69%;
+}
+.about-content-left {
+    width: 50%;
+}
+.about-content-left img {
+    width: 100%;
+}
+.about-content-right {
+    width: 50%;
+}
+.about-content-right h2 {
+    font-family: var(--subtex);
+    font-weight: normal;
+    color: var(--main-color);
+}
+.about-content-right p {
+    font-size: 18px;
+    margin: 20px 0;
+    font-family: var(--main-color);
+}
+
+.service {
+    margin-top: 30px;
+    width: 69%;
+    margin-left: 15%;
+    margin-bottom: 20px;
+
+}
+.service-item {
+    width: 30%;
+    text-align: center;
+    /* padding: 20px; */
+    background-color: #b6dcec;
+    /* margin-left: 5%; */
+    padding: 15px 0 15px 0;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.service-item:hover{
+    box-shadow: 2px 2px 10px black;
+}
+.service-item img {
+    width: 50%;
+    height: 20vh;
+    margin-bottom: 6px;
+}
+/* ----------------------------------Tour----------------------------- */
+.tour {
+    /* padding: 100px 0; */
+}
+.container_2 {
+    width: 69%;
+    margin: 15%;
+
+}
+.tour-content-item {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.tour-content-item-img{
+    width: 50%;
+}
+.tour-content-item-img img {
+    /* object-fit: cover; */
+    width: 100%;
+    height: 100%;
+}
+
+.tour-content-item-text {
+    width: 50%;
+    padding: 20px 15px 0 50px;
+}
+
+.tour-content-item-text h2 {
+    font-family: var(--subtex);
+    font-weight: normal;
+    color: var(--main-color);
+}
+.tour-content-item-text p {
+    font-size: 18px;
+    margin: 20px 0;
+    font-family: var(--subtex);
+}
+.tour-content-item {
+    box-shadow: 2px 2px 10px rgba(0,0,0,00.2);
+    margin-bottom: 12px;
+}
+.tour-content-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+/* --------------------------Review--------------------*/
+.review {
+    /* padding: 100px 0; */
+    padding-bottom: 100px;
+}
+
+.review-content{
+    width: 69%;
+    margin-left: 15%;
+}
+
+.review-item {
+    width: 30%;
+    height: 50vh;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    padding: 20px 3%;
+}
+
+.review-item-text{
+    width: 100%;
+    height: 60%;
+}
+
+.review-item-text img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px 0 20px 40%;
+    transition: all 0.5s ease;
+}
+
+.review-item:hover .review-item-text img{
+    transform: translateY(-15px);
+}
+
+.review-item-text p{
+    text-align: center;
+}
+
+.review-item-img{
+    width: 100%;
+    height: 39%;
+    font-size: 10px;
+}
+
+.review-item-img img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.review-item-img h2{
+    color: var(--main-color);
+    padding-right:15%;
+    font-size: 2em;
+}
+
+.review-item-img h2 p{
+    color:#333;
+    font-weight: normal;
+}
+
+.review-item hr{
+    margin: 5% 0;
+    border: rgba(84, 211, 211, 0.8) solid 0.25px;
+}
+
+/*------------------------Sign up---------------------------*/
+.signup {
+    padding: 50px 0;
+    width: 69%;
+    margin-left: 15%;
+}
+.signup-content {
+    background-color: #b6dcec;
+    padding: 30px 0;
+    align-items: center;
+    text-align: center;
+}
+.signup-content input {
+    height: 35px;
+    width: 50%;
+    background-color: white;
+    border-radius: 10px;
+}
+/*------------------------Contact---------------------------*/
+
+.container_4 {
+    width: 69%;
+    margin-left: 15%;
+}
+.contact-content-top {
+    width: 100%;
+}
+.contact-content-item {
+    width: 48%;
+    margin-left: 1%;
+    margin-bottom: 3vh;
+}
+.contact-content-item input{
+    border-radius: 15px;
+}
+.contact-content-bottom {
+    width: 100%;
+}
+.contact-content-bottom textarea {
+    width: 99%;
+    margin-left: 1%;
+    background-color: #dddd;
+    height: 100px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-top: 10px;
+    border-radius: 15px;
+}
+.contact-content-bottom button {
+    margin: 20px 0 50px 46%;
+}
+/*------------------------Reponsive---------------------------*/
+@media (max-width: 600px){
+    .header-content{
+        width: 100%;
+    }
+    .header-top ul {
+        width: 40%;
+    }
+    .nice-place {
+        padding: 50px 0;
+    }
+    .nice-place-item {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 0 12px;
+    }
+    .about{
+        padding: 50px 0;
+    }
+    .container_1 {
+        display: block;
+    }
+    .about-content-left {
+        width: 100%;
+    }
+    .about-content-right{
+        width: 100%;
+        padding: 0 12px;
+    }
+    .service-item{
+        width: 100%;
+        margin-bottom: 12px;
+    }
+    .tour {
+        padding: 50px 0;
+    }
+    .tour-content-item-img {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 12px;
+    }
+    .tour-content-item-text {
+        width: 100%;
+        padding: 12px;
+    }
+    .signup-content {
+        height: 150px;
+    }
+    .signup-content input{
+        width: 95%;
+        margin-bottom: 20px;
+    }
+    .signup-content button{
+        width: 90%;
+    }
+    .contact-content-top {
+        display: block;
+    }
+    .contact-content-item {
+        width: 95%;
+        margin-left: 2%;
+    }
+    .contact-content-bottom {
+        width: 95%;
+        margin-left: 2%;
+    }
+    .contact-content-bottom button {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+@media (max-width: 885px){
+    .review-item {
+        width: 100%;
+        margin-bottom: 20px;
+        margin: 12px;
+    }
+}
