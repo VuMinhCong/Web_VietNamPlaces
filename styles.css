@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
-
+html{
+    scroll-behavior: smooth;
+}
 :root {
     --main-color: #6DBFE2;
     --subtex: 'Open Sans', sans-serif;
 }
 * {
+    color: black;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -195,6 +198,7 @@ form button:hover {
     border-radius: 5px;
     transition: all 0.2s ease;
 }
+
 .but:hover {
     background-color: tomato;
 }
@@ -284,9 +288,6 @@ form button:hover {
     margin-bottom: 6px;
 }
 /* ----------------------------------Tour----------------------------- */
-.tour {
-    /* padding: 100px 0; */
-}
 .container_2 {
     width: 69%;
     margin: 15%;
@@ -447,14 +448,13 @@ form button:hover {
 }
 .contact-content-bottom button {
     margin: 20px 0 50px 46%;
+
+
 }
 /*------------------------Reponsive---------------------------*/
 @media (max-width: 600px){
     .header-content{
         width: 100%;
-    }
-    .header-top ul {
-        width: 40%;
     }
     .nice-place {
         padding: 50px 0;
@@ -481,18 +481,7 @@ form button:hover {
         width: 100%;
         margin-bottom: 12px;
     }
-    .tour {
-        padding: 50px 0;
-    }
-    .tour-content-item-img {
-        width: 100%;
-        margin-bottom: 20px;
-        padding: 12px;
-    }
-    .tour-content-item-text {
-        width: 100%;
-        padding: 12px;
-    }
+    
     .signup-content {
         height: 150px;
     }
@@ -519,10 +508,29 @@ form button:hover {
         margin-left: 5%;
     }
 }
+@media (max-width: 1000px){
+    .header-top ul {
+        width: 40%;
+    }
+}
 @media (max-width: 885px){
     .review-item {
         width: 100%;
         margin-bottom: 20px;
         margin: 12px;
+    }
+}
+@media (max-width: 700px){
+    .tour {
+        padding: 50px 0;
+    }
+    .tour-content-item-img {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 12px;
+    }
+    .tour-content-item-text {
+        width: 100%;
+        padding: 12px;
     }
 }
